@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Page</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+            transition-duration: 1ms;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: black;
+            font-size: 1.4rem;
+        }
+
+        #navbar {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1em;
+            background-color: wheat;
+            padding: 1em;
+            position: fixed;
+            width: 200px;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        #navbar header {
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.4rem;
+            letter-spacing: 1.2px;
+        }
+
+        .main-section {
+            width: 70%;
+            text-align: justify;
+            margin-left: 18em;
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+
+        @media (max-width: 1024px) {
+            .main-section {
+                margin-left: 5em;
+                width: 80%;
+            }
+
+            #navbar {
+                width: 100%;
+                height: auto;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .nav-link{
+                font-size: 1.2rem;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <main id="main-doc">
+        <nav id="navbar">
+            <header>Documentation Menu</header>
+            <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+            <a class="nav-link" href="#Introduction">Introduction</a>
+            <a class="nav-link" href="#Difference">Difference</a>
+            <a class="nav-link" href="#Applications">Applications</a>
+            <a class="nav-link" href="#Java_Use">Java Use</a>
+        </nav>
+
+        <section class="main-section" id="JavaScript_and_Java">
+            <header>
+                <h1>JavaScript and Java</h1>
+            </header>
+            <p>This page provides an overview of JavaScript and Java, their differences, and their applications.</p>
+        </section>
+
+        <section class="main-section" id="Introduction">
+            <header>
+                <h2>Introduction</h2>
+            </header>
+            <p>JavaScript is a beginner-friendly programming language that allows developers to design interactive websites. On the other hand, Java is a complex language used to build sophisticated applications like Android apps, chatbots, and financial software.</p>
+            <p>Java and JavaScript have distinct purposes, strengths, and limitations. These factors can influence the types of projects you can create and the careers you pursue. Some tech professionals learn both Java and JavaScript, but they may be optional, depending on your professional goals.</p>
+        </section>
+
+        <section class="main-section" id="Difference">
+            <header>
+                <h2>Difference</h2>
+            </header>
+            <p>What’s the difference between Java and JavaScript?</p>
+            <code>Many people think that moving from Java to JavaScript is like switching from driving a car to driving a lorry. Java and JavaScript, however, are as distinct from each other as a car and a sailboat. While both are a means of transportation, their skills, knowledge, and environment are entirely different.</code>
+            <p>JavaScript is an interpreted language, which means it must be executed – or activated – by a JavaScript engine. The developer writes JavaScript code and embeds it in a webpage. The code remains dormant until a user opens the webpage in a web browser like Google Chrome or Mozilla Firefox. These web browsers contain JavaScript engines that execute the JavaScript code, activating interactive features like image carousels and drop-down menus.</p>
+            <p>By contrast, Java is a compiled language requiring two steps to execute. First, a compiler translates the human-written source code into bytecode, the language of computers. The Java Virtual Machine (JVM) interprets the bytecode into a usable format for a specific operating system and executes it. This process allows developers to write Java code for any platform.</p>
+            <p>5 key differences between Java and JavaScript</p>
+            <p>The differences between Java vs. JavaScript go beyond their methods of execution. Here are five factors that set these languages apart.</p>
+        </section>
+
+        <section class="main-section" id="Applications">
+            <header>
+                <h2>Applications</h2>
+            </header>
+            <code>The JavaScript language is typically used for web development. Developers add JavaScript code to static web pages to make the client-facing side more dynamic and interactive. For example, you can use JavaScript to add:</code>
+            <ul>
+                <li>Contact forms</li>
+                <li>Buttons</li>
+                <li>Animated text</li>
+                <li>Pop-up windows</li>
+            </ul>
+            <p>Frameworks like React Native and Node.js enable JavaScript Developers to create mobile apps, web servers, and browser-based video games.</p>
+        </section>
+
+        <section class="main-section" id="Java_Use">
+            <header>
+                <h2>Java Use</h2>
+            </header>
+            <code>Java is a platform-independent language that builds a broader range of applications, such as:</code>
+            <ul>
+                <li>Artificial intelligence programs</li>
+                <li>Cross-platform desktop software</li>
+                <li>Enterprise software</li>
+                <li>Internet of Things applications</li>
+                <li>Web applications</li>
+            </ul>
+            <p>Complexity</p>
+            <code>JavaScript is a relatively lightweight scripting language that resembles human language. As an object-oriented programming language, JavaScript is designed to make web development more interactive and dynamic — allowing developers to create rich interfaces and complex web applications.</code>
+            <p>Syntax</p>
+            <code>Syntax refers to the grammar rules, structure, and order of operations for programming languages. Developers use syntax to write code, just like writers use grammar and formatting conventions to create sentences.</code>
+        </section>
+    </main>
+</body>
+</html>
